@@ -12,12 +12,12 @@ O **VeroEnv** é o componente responsável pela gestão de variáveis de ambient
 - **Recuperação Tipada:** Inclui métodos específicos como `getInt()` para garantir a integridade de dados numéricos (ex: portas de banco de dados).
 
 ## 📂 Estrutura de Pastas Recomendada
-`text
+```text
 projeto/
 ├── sys/           # Pasta de sistema (privada)
 │   └── .env       # O seu cofre de segredos
 └── index.php      # Entrada do sistema
-`
+```
 
 ## 🛠️ Instalação via Docas
 
