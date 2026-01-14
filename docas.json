@@ -1,0 +1,5 @@
+{
+    "name": "snahar/vero-env",
+    "version": "1.0.0",
+    "description": "Gerenciador de variáveis de ambiente (.env) seguro para a pasta /sys."
+}
