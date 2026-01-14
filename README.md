@@ -22,33 +22,37 @@ projeto/
 ## 🛠️ Instalação via Docas
 
 No seu docas.json:
-`
+```
 "require": {
     "snahar/vero-env": "1.0.0"
 }
-`
+```
 
 ## 📖 Como Usar
 1. Carregando o Cofre
 
 No seu arquivo de entrada (ex: index.php), inicialize o Vero apontando para a raiz do projeto:
 
-`use VeroEnv\Vero;`
+```
+use VeroEnv\Vero;
 
-`// Ele buscará automaticamente em __DIR__ . '/sys/.env'`
-`Vero::carregar(__DIR__);`
-
+// Ele buscará automaticamente em __DIR__ . '/sys/.env'
+Vero::carregar(__DIR__);
+```
 2. Recuperando Valores
 
-`// Recupera uma string (com valor padrão se não existir)`
-`$host = Vero::get('DB_HOST', 'localhost');`
+```
+// Recupera uma string (com valor padrão se não existir)
+$host = Vero::get('DB_HOST', 'localhost');
 
-`// Recupera garantindo que o retorno seja um número inteiro
+// Recupera garantindo que o retorno seja um número inteiro
 $port = Vero::getInt('DB_PORT', 3306);
-`
+```
 
 ## 🤝 Dependências
 
     CurupiraDoc: Essencial para a exibição de alertas visuais em caso de falha no carregamento do ambiente.
+   
+---
 
 Desenvolvido por Sérgio Nahar 🦂
